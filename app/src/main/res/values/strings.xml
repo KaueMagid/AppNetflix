@@ -3,4 +3,8 @@
     <string name="series_name">House of Cards</string>
     <string name="series_season_and_ep">S1:E2</string>
     <string name="series_description">Nothing</string>
+    <string name="icon_message">Menu messages</string>
+    <string name="icon_volume">Set volume</string>
+    <string name="icon_star">Favorite Episode</string>
+    <string name="icon_description">Show the description of this episode</string>
 </resources>

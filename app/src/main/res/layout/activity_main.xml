@@ -31,4 +31,72 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_series_name" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/image_icon_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_message"
+        app:layout_constraintStart_toStartOf="@+id/guideline_msg"
+        app:layout_constraintTop_toBottomOf="@+id/txt_episode"
+        app:srcCompat="@drawable/ic_message_24dp" />
+
+    <ImageView
+        android:id="@+id/image_icon_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_volume"
+        app:layout_constraintStart_toStartOf="@+id/guideline_star"
+        app:layout_constraintTop_toBottomOf="@+id/txt_episode"
+        app:srcCompat="@drawable/ic_volume_24dp" />
+
+    <ImageView
+        android:id="@+id/image_icon_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_star"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_volume"
+        app:layout_constraintTop_toBottomOf="@+id/txt_episode"
+        app:srcCompat="@drawable/ic_star_24dp" />
+
+    <ImageView
+        android:id="@+id/image_icon_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_description"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_description"
+        app:layout_constraintTop_toBottomOf="@+id/txt_episode"
+        app:srcCompat="@drawable/ic_description_24dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
